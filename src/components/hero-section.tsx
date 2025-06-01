@@ -69,7 +69,7 @@ export function HeroSection() {
               </p>
             </div>
             <div className="flex justify-center">
-              <Button size="lg" className="mt-10 uppercase font-mono font-medium">Start Chatting</Button>
+              <Button size="lg" className="mt-10">Start Chatting</Button>
             </div>
             <section className="relative isolate max-w-5xl mx-auto">
               <div className="absolute left-1/2 top-0">

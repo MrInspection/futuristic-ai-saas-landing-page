@@ -1,11 +1,11 @@
 "use client"
 
-import logoImage from "@/assets/images/sphereal-logo.svg?url"
 import {Button} from "@/components/ui/button";
+import {OrbitCircle} from "@/components/orbit-circle";
+import {SpherealLogo} from "@/components/sphereal-logo";
 import Link from "next/link";
 import {useState} from "react";
 import {cn} from "@/lib/utils";
-import {OrbitCircle} from "@/components/orbit-circle";
 
 const NAVIGATION_CONFIG = [
   {
@@ -31,13 +31,7 @@ export function SiteHeader() {
         className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
         <section className="container flex items-center justify-between h-18">
           <Link href="/" className="flex items-center gap-4">
-            <div
-              className="size-10 bg-[conic-gradient(from_45deg,var(--color-violet-400),var(--color-fuchsia-400),var(--color-amber-300),var(--color-teal-300),var(--color-violet-400))]"
-              style={{
-                maskImage: `url(${logoImage.src})`,
-                maskSize: "contain"
-              }}
-            />
+            <SpherealLogo/>
             <p className="font-bold text-2xl">sphereal.ai</p>
           </Link>
           <div className="h-full max-lg:hidden">
