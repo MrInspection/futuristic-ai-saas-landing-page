@@ -2,6 +2,8 @@
 
 ![](public/opengraph-image.png)
 
+Design Inspiration : https://ui8.net/ui8/products/brainwave-ai-landing-page-kit
+
 ### 🪛 Technologies used
 
 - Next.js 15
