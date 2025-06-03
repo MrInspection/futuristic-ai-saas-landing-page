@@ -39,11 +39,11 @@ export function HeroSection() {
           <SectionWrapperContent className="relative isolate [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]">
             <div className="absolute -z-10 inset-0 bg-[radial-gradient(circle_farthest-corner,var(--color-fuchsia-900)_50%,var(--color-violet-400)_75%,transparent)] [mask-image:radial-gradient(circle_farthest-side,black,transparent)]">
               <div className="absolute inset-0 -z-10">
-                <OrbitCircle className="size-[350px] border-white/70"/>
-                <OrbitCircle className="size-[600px] border-white/70"/>
-                <OrbitCircle className="size-[850px] border-white/70"/>
-                <OrbitCircle className="size-[1100px] border-white/70"/>
-                <OrbitCircle className="size-[1350px] border-white/70"/>
+                <OrbitCircle className="size-[350px] border-white/30"/>
+                <OrbitCircle className="size-[600px] border-white/30"/>
+                <OrbitCircle className="size-[850px] border-white/30"/>
+                <OrbitCircle className="size-[1100px] border-white/30"/>
+                <OrbitCircle className="size-[1350px] border-white/30"/>
               </div>
             </div>
             <div className="flex flex-col items-center justify-center">
