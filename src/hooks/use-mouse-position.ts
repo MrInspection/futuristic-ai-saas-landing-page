@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import { useMotionValue, useTransform } from "motion/react";
+import { useEffect, useState } from "react";
 
 export const useMousePosition = () => {
   const [innerWidth, setInnerWidth] = useState(1);

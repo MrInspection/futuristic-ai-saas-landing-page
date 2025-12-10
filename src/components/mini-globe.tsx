@@ -1,33 +1,39 @@
-import {ComponentPropsWithoutRef} from "react";
-import {cn} from "@/lib/utils";
-import {cva, VariantProps} from "class-variance-authority";
+import { cva, type VariantProps } from "class-variance-authority";
+import type { ComponentPropsWithoutRef } from "react";
+import { cn } from "@/lib/utils";
 
 const globeVariants = cva(
-  "bg-gradient-to-b to-gray-950 size-8 rounded-full rotate-135",
+  "size-8 rotate-135 rounded-full bg-gradient-to-b to-gray-950",
   {
     variants: {
       color: {
         violet: "from-violet-400",
         teal: "from-teal-400",
-        fuchsia: "from-fuchsia-400"
+        fuchsia: "from-fuchsia-400",
       },
       size: {
         sm: "size-4",
         md: "size-6",
-        lg: "size-8"
-      }
+        lg: "size-8",
+      },
     },
     defaultVariants: {
       size: "lg",
-      color: "violet"
-    }
-  }
-)
+      color: "violet",
+    },
+  },
+);
 
-type MiniGlobeProps = ComponentPropsWithoutRef<"div"> & VariantProps<typeof globeVariants> & {}
+type MiniGlobeProps = ComponentPropsWithoutRef<"div"> &
+  VariantProps<typeof globeVariants> & {};
 
-export function MiniGlobe({className, color, size, ...props}: MiniGlobeProps) {
+export function MiniGlobe({
+  className,
+  color,
+  size,
+  ...props
+}: MiniGlobeProps) {
   return (
-    <div className={cn(globeVariants({color, size, className}))} {...props} />
-  )
+    <div className={cn(globeVariants({ color, size, className }))} {...props} />
+  );
 }
